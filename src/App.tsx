@@ -9,7 +9,7 @@ import {
     Container,
     CssBaseline,
     FormControlLabel,
-    FormGroup,
+    FormGroup, Link,
     Switch,
 } from "@mui/material";
 import {createTheme, ThemeProvider} from "@mui/material/styles";
@@ -174,8 +174,14 @@ function App() {
                     </CardContent>
                 </Card>
             </Container>
-            <BottomNavigation sx={{minwidth: 400, justifyItems: "center", margin: "10px"}}>
-                <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg"/>
+            <BottomNavigation sx={{minWidth: 400, justifyItems: "center", margin: "10px"}} >
+                <Link href="https://www.themoviedb.org">
+                    <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg"
+                         alt="themoviedb"
+                         height={50}
+                         width={600}
+                    />
+                </Link>
             </BottomNavigation>
         </ThemeProvider>
     )
